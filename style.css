@@ -2153,7 +2153,741 @@ body:not(.page-loaded) {
         height: 90px;
     }
 }
+/* =========================================================
+   SUHYWRITES — FULL WEBSITE MINIMAL EDITORIAL RESET
+   PASTE THIS AT THE VERY END OF style.css
+   DO NOT DELETE EXISTING CSS
+   ========================================================= */
 
+/* ---------- GLOBAL ---------- */
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  background: #0d080a;
+  color: #f7eeee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #a94f68;
+  color: #fff;
+}
+
+
+/* =========================================================
+   NAVBAR — CLEANER
+   ========================================================= */
+
+.navbar {
+  background: rgba(13, 8, 10, 0.88);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(216, 137, 157, 0.08);
+  box-shadow: none;
+}
+
+.navbar .container {
+  max-width: 1180px;
+}
+
+.nav-links {
+  gap: 26px;
+}
+
+.nav-links a {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.nav-cta {
+  padding: 10px 17px;
+}
+
+
+/* =========================================================
+   ALL SECTIONS — MORE BREATHING ROOM
+   ========================================================= */
+
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HERO — SIMPLE EDITORIAL
+   ========================================================= */
+
+.hero {
+  min-height: 100vh;
+  padding: 145px 20px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      rgba(109, 43, 66, 0.20),
+      transparent 38%
+    ),
+    #0d080a;
+}
+
+.hero-grid {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.hero-eyebrow {
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin: 0;
+  opacity: .65;
+}
+
+.hero h1 {
+  max-width: 850px;
+  margin: 0 auto;
+  font-size: clamp(52px, 8vw, 90px);
+  line-height: .95;
+  letter-spacing: -3px;
+  text-align: center;
+}
+
+.hero h1 span {
+  display: block;
+  margin-top: 18px;
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(11px, 1.4vw, 15px);
+  line-height: 1.5;
+  letter-spacing: 3px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.hero-tagline {
+  max-width: 580px;
+  margin: 5px auto 0;
+  font-size: clamp(20px, 3vw, 29px);
+  line-height: 1.35;
+}
+
+.hero-subtitle {
+  max-width: 520px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: .68;
+}
+
+.hero-actions {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.trust-stats {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+
+.hero-card {
+  opacity: .35;
+  transform: scale(.82);
+}
+
+.floating-note {
+  opacity: .25;
+  transform: scale(.75);
+}
+
+.hero .butterfly {
+  opacity: .30;
+}
+
+
+/* =========================================================
+   ABOUT
+   ========================================================= */
+
+.about {
+  padding: 125px 0;
+  background: #10090c;
+}
+
+.about .container {
+  max-width: 900px;
+}
+
+.about h2 {
+  max-width: 700px;
+  font-size: clamp(35px, 5vw, 58px);
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+}
+
+.about p {
+  max-width: 650px;
+  font-size: 15px;
+  line-height: 1.9;
+  opacity: .70;
+}
+
+.about a {
+  margin-top: 25px;
+}
+
+
+/* =========================================================
+   SECTION LABELS / HEADINGS
+   ========================================================= */
+
+.section-label,
+.section-eyebrow {
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  opacity: .55;
+}
+
+section h2 {
+  font-size: clamp(34px, 5vw, 58px);
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+}
+
+
+/* =========================================================
+   SERVICES — LESS CARD-LIKE
+   ========================================================= */
+
+.services {
+  padding: 125px 0;
+  background: #0d080a;
+}
+
+.services .section-header {
+  max-width: 650px;
+  margin-bottom: 65px;
+}
+
+.services .section-header p {
+  max-width: 520px;
+  opacity: .6;
+  line-height: 1.8;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.service-card {
+  padding: 38px 30px 42px;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  border-right: 1px solid rgba(255,255,255,.08);
+  border-radius: 0;
+  box-shadow: none;
+  transition: background .3s ease;
+}
+
+.service-card:nth-child(3n) {
+  border-right: 0;
+}
+
+.service-card:hover {
+  transform: none;
+  background: rgba(169,79,104,.05);
+}
+
+.service-card .icon {
+  margin-bottom: 22px;
+  opacity: .7;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  font-size: 13px;
+  line-height: 1.75;
+  opacity: .58;
+}
+
+.service-card ul {
+  margin-top: 20px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.service-card li {
+  font-size: 12px;
+  opacity: .55;
+  margin-bottom: 7px;
+}
+
+
+/* =========================================================
+   PORTFOLIO — MAKE THIS THE MAIN FOCUS
+   ========================================================= */
+
+.portfolio {
+  padding: 140px 0;
+  background: #120a0d;
+}
+
+.portfolio .section-header {
+  max-width: 720px;
+  margin-bottom: 50px;
+}
+
+.portfolio .section-header p {
+  max-width: 550px;
+  opacity: .6;
+  line-height: 1.8;
+}
+
+.portfolio-filters {
+  margin-bottom: 40px;
+  gap: 8px;
+}
+
+.portfolio-filter {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 100px;
+  padding: 8px 15px;
+  font-size: 11px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.portfolio-card {
+  min-height: 300px;
+  padding: 34px;
+  background: #170d11;
+  border: 1px solid rgba(255,255,255,.07);
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(216,137,157,.25);
+}
+
+.portfolio-card h3 {
+  font-size: 25px;
+  line-height: 1.15;
+}
+
+.portfolio-card p {
+  max-width: 430px;
+  font-size: 13px;
+  line-height: 1.8;
+  opacity: .58;
+}
+
+
+/* =========================================================
+   WHY SUHYWRITES — SIMPLE EDITORIAL LIST
+   ========================================================= */
+
+.why {
+  padding: 125px 0;
+  background: #0d080a;
+}
+
+.why .section-header {
+  max-width: 650px;
+  margin-bottom: 60px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.why-card {
+  padding: 30px 25px 35px 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.why-card:nth-child(odd) {
+  padding-right: 50px;
+}
+
+.why-card:nth-child(even) {
+  padding-left: 35px;
+  border-left: 1px solid rgba(255,255,255,.08);
+}
+
+.why-card h3 {
+  font-size: 18px;
+}
+
+.why-card p {
+  max-width: 450px;
+  font-size: 13px;
+  line-height: 1.75;
+  opacity: .58;
+}
+
+
+/* =========================================================
+   PROCESS — REMOVE HEAVY BOX FEEL
+   ========================================================= */
+
+.process {
+  padding: 125px 0;
+  background: #10090c;
+}
+
+.process .section-header {
+  max-width: 650px;
+  margin-bottom: 65px;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+  border-top: 1px solid rgba(255,255,255,.08);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.process-card {
+  padding: 30px 20px 35px;
+  background: transparent;
+  border: 0;
+  border-right: 1px solid rgba(255,255,255,.08);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.process-card:last-child {
+  border-right: 0;
+}
+
+.process-card h3 {
+  font-size: 17px;
+}
+
+.process-card p {
+  font-size: 12px;
+  line-height: 1.7;
+  opacity: .55;
+}
+
+
+/* =========================================================
+   CTA — ONE STRONG MOMENT
+   ========================================================= */
+
+.cta {
+  padding: 135px 20px;
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(117,45,68,.25),
+      transparent 55%
+    ),
+    #0d080a;
+  text-align: center;
+}
+
+.cta h2 {
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: clamp(38px, 6vw, 68px);
+}
+
+.cta p {
+  max-width: 540px;
+  margin: 25px auto 30px;
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: .62;
+}
+
+
+/* =========================================================
+   CONTACT — QUIET AND CLEAN
+   ========================================================= */
+
+.contact {
+  padding: 120px 0;
+  background: #120a0d;
+}
+
+.contact .section-header {
+  max-width: 650px;
+}
+
+.contact .section-header p {
+  opacity: .6;
+  line-height: 1.8;
+}
+
+.contact-email {
+  font-size: clamp(20px, 4vw, 38px);
+  word-break: break-word;
+}
+
+.contact-links {
+  margin-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.contact-links a {
+  border: 1px solid rgba(255,255,255,.09);
+  padding: 10px 15px;
+  border-radius: 100px;
+  font-size: 11px;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+  padding: 45px 0;
+  background: #090607;
+  border-top: 1px solid rgba(255,255,255,.07);
+}
+
+footer p {
+  opacity: .45;
+  font-size: 11px;
+}
+
+
+/* =========================================================
+   REMOVE EXCESSIVE DECORATION
+   ========================================================= */
+
+.butterfly {
+  pointer-events: none;
+}
+
+.hero .floating-note {
+  display: none;
+}
+
+/* Keep only one decorative butterfly visible */
+.hero .butterfly:nth-of-type(n+3) {
+  display: none;
+}
+
+
+/* =========================================================
+   ANIMATION — CALMER
+   ========================================================= */
+
+.reveal {
+  transition:
+    opacity .6s ease,
+    transform .6s ease;
+}
+
+.service-card,
+.portfolio-card,
+.why-card,
+.process-card {
+  animation: none !important;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .container {
+    width: min(100% - 34px, 700px);
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-card:nth-child(3n) {
+    border-right: 1px solid rgba(255,255,255,.08);
+  }
+
+  .service-card:nth-child(2n) {
+    border-right: 0;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-card {
+    border-right: 0;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+  }
+
+  .process-card:last-child {
+    border-bottom: 0;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .hero {
+    min-height: auto;
+    padding: 125px 18px 80px;
+  }
+
+  .hero h1 {
+    font-size: clamp(45px, 15vw, 68px);
+    letter-spacing: -2px;
+  }
+
+  .hero-tagline {
+    font-size: 20px;
+  }
+
+  .hero-subtitle {
+    font-size: 13px;
+  }
+
+  .trust-stats {
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  section h2 {
+    font-size: 36px;
+  }
+
+  .about,
+  .services,
+  .portfolio,
+  .why,
+  .process,
+  .contact {
+    padding: 90px 0;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card,
+  .service-card:nth-child(3n),
+  .service-card:nth-child(2n) {
+    border-right: 0;
+    padding: 30px 5px 35px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-card {
+    min-height: 260px;
+    padding: 28px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-card,
+  .why-card:nth-child(odd),
+  .why-card:nth-child(even) {
+    padding: 28px 0;
+    border-left: 0;
+  }
+
+  .cta {
+    padding: 100px 20px;
+  }
+
+  .contact-links {
+    flex-direction: column;
+  }
+
+  .contact-links a {
+    text-align: center;
+  }
+}
+
+
+/* =========================================================
+   EXTRA SMALL DEVICES
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+  .hero {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .hero h1 {
+    font-size: 43px;
+  }
+
+  .hero-tagline {
+    font-size: 18px;
+  }
+
+  .container {
+    width: calc(100% - 28px);
+  }
+}
 
 
 
