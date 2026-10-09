@@ -1,981 +1,207 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
-    <!-- Responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO -->
-    <title>SuhyWrites | Content Writer & SEO Content Writer</title>
+    <title>SuhyWrites | Suhaira Awan — Content Writer</title>
 
-    <meta name="description"
-        content="Suhaira Awan — Content Writer & SEO Content Writer creating engaging, clear and conversion-focused content.">
+    <meta name="description" content="Explore SuhyWrites, the writing portfolio of Suhaira Awan (Kaneez Mamoona). Discover thoughtful writing, original content, and writing projects.">
 
-    <meta name="keywords"
-        content="SuhyWrites, content writer, SEO content writer, blog writer, article writer, website content, copywriter">
+    <meta name="theme-color" content="#1b1018">
 
-    <meta name="author" content="Suhaira Awan (Kaneez Mamoona)">
-
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <!-- =========================================
-         BUTTERFLY BACKGROUND
-    ========================================== -->
+    <!-- Animated white flowers and petals -->
+    <div class="flower-layer" aria-hidden="true">
+        <span class="floating-flower flower-one">✿</span>
+        <span class="floating-flower flower-two">❀</span>
+        <span class="floating-flower flower-three">✿</span>
+        <span class="floating-flower flower-four">❀</span>
+        <span class="floating-flower flower-five">✿</span>
 
-    <div class="butterfly butterfly-1">🦋</div>
-    <div class="butterfly butterfly-2">🦋</div>
-    <div class="butterfly butterfly-3">🦋</div>
-    <div class="butterfly butterfly-4">🦋</div>
-    <div class="butterfly butterfly-5">🦋</div>
+        <span class="floating-petal petal-one">✧</span>
+        <span class="floating-petal petal-two">❋</span>
+        <span class="floating-petal petal-three">✧</span>
+        <span class="floating-petal petal-four">❋</span>
+    </div>
 
+    <!-- Header -->
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
 
-    <!-- =========================================
-         NAVBAR
-    ========================================== -->
-
-    <header class="navbar">
-
-        <div class="nav-container">
-
-            <a href="#home" class="logo">
-                Suhy<span>Writes</span>
+            <a class="logo" href="#home">
+                suhy<span>writes</span><span class="logo-dot">.</span>
             </a>
 
-            <nav class="nav-links">
-
-                <a href="#home" class="active">Home</a>
-
-                <a href="#about">About</a>
-
-                <a href="#services">Services</a>
-
-                <a href="#portfolio">Portfolio</a>
-
-                <a href="#process">Process</a>
-
-                <a href="#contact">Contact</a>
-
-            </nav>
-
-            <a href="#contact" class="nav-button">
-                Let's Talk
-            </a>
-
-            <!-- Mobile Menu -->
-            <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+            <button class="menu-toggle"
+                    type="button"
+                    aria-label="Open navigation"
+                    aria-expanded="false"
+                    aria-controls="nav-links">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
 
-        </div>
+            <div class="nav-links" id="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#why-me">Why Me</a>
+                <a href="#process">Process</a>
+                <a href="#contact">Contact</a>
 
+                <a class="nav-hire mobile-hire" href="#contact">
+                    Hire Me <span>↗</span>
+                </a>
+            </div>
+
+            <a class="nav-hire desktop-hire" href="#contact">
+                Hire Me <span>↗</span>
+            </a>
+
+        </nav>
     </header>
 
 
-
-    <!-- =========================================
-         HERO SECTION
-    ========================================== -->
-
     <main>
 
+        <!-- HERO: centered editorial layout -->
         <section class="hero" id="home">
 
-            <div class="hero-container">
+            <div class="hero-inner">
 
-                <div class="hero-content reveal">
-
-                    <div class="hero-badge">
-                        <span class="status-dot"></span>
-                        Available for freelance projects
-                    </div>
-
-                    <p class="hero-small-text">
-                        CONTENT WRITER • SEO CONTENT WRITER
-                    </p>
-
-                    <h1>
-                        Words that
-                        <span>connect.</span>
-                        <br>
-                        Content that
-                        <span>converts.</span>
-                    </h1>
-
-                    <p class="hero-description">
-                        I'm <strong>Suhaira Awan (Kaneez Mamoona)</strong>,
-                        a passionate content writer creating meaningful,
-                        engaging and reader-focused content that helps
-                        brands communicate better.
-                    </p>
-
-                    <div class="hero-buttons">
-
-                        <a href="#portfolio" class="primary-button">
-                            Explore My Work
-                            <span>↗</span>
-                        </a>
-
-                        <a href="#contact" class="secondary-button">
-                            Work With Me
-                        </a>
-
-                    </div>
-
-                    <div class="hero-trust">
-
-                        <div class="trust-item">
-                            <strong>SEO</strong>
-                            <span>Optimized</span>
-                        </div>
-
-                        <div class="trust-line"></div>
-
-                        <div class="trust-item">
-                            <strong>100%</strong>
-                            <span>Original</span>
-                        </div>
-
-                        <div class="trust-line"></div>
-
-                        <div class="trust-item">
-                            <strong>Reader</strong>
-                            <span>Focused</span>
-                        </div>
-
-                    </div>
-
+                <div class="hero-ornament" aria-hidden="true">
+                    <span>✿</span>
                 </div>
 
+                <p class="hero-eyebrow">
+                    THE WRITING PORTFOLIO
+                </p>
 
-                <!-- HERO VISUAL -->
+                <h1 class="hero-title">
+                    Words that<br>
+                    <span>connect.</span>
+                </h1>
 
-                <div class="hero-visual reveal">
+                <p class="hero-subtitle">
+                    Content Writer <span>·</span> SEO Content Writer
+                </p>
 
-                    <div class="hero-card">
+                <div class="hero-divider" aria-hidden="true">
+                    <span></span>
+                    <span class="divider-flower">✿</span>
+                    <span></span>
+                </div>
 
-                        <div class="card-decoration decoration-one"></div>
-                        <div class="card-decoration decoration-two"></div>
+                <p class="hero-tagline">
+                    Thoughtful words. Meaningful impact.
+                </p>
 
-                        <div class="quote-mark">
-                            “
-                        </div>
+                <div class="hero-buttons">
+                    <a href="#contact" class="button button-primary">
+                        Hire Me <span>↗</span>
+                    </a>
 
-                        <p>
-                            Good writing doesn't just fill a page.
-                            It makes someone stop, feel, think —
-                            and remember.
-                        </p>
+                    <a href="#portfolio" class="button button-outline">
+                        View My Work
+                    </a>
+                </div>
 
-                        <div class="card-author">
+                <div class="hero-socials">
+                    <a href="https://www.instagram.com/suhywrites/"
+                       target="_blank" rel="noopener noreferrer">Instagram</a>
 
-                            <div class="author-line"></div>
+                    <span>·</span>
 
-                            <div>
-                                <strong>SuhyWrites</strong>
-                                <span>Words with purpose.</span>
-                            </div>
+                    <a href="https://www.linkedin.com/in/suhaira-awan-kaneez-mamoona-2a5a33394/"
+                       target="_blank" rel="noopener noreferrer">LinkedIn</a>
 
-                        </div>
+                    <span>·</span>
 
-                    </div>
-
-                    <div class="floating-note note-one">
-                        ✦ SEO
-                    </div>
-
-                    <div class="floating-note note-two">
-                        ✎ Writing
-                    </div>
-
-                    <div class="floating-note note-three">
-                        ♡ Stories
-                    </div>
-
+                    <a href="https://suhywrites.wordpress.com/my-content-writing-portfolio/"
+                       target="_blank" rel="noopener noreferrer">WordPress</a>
                 </div>
 
             </div>
 
-            <div class="scroll-indicator">
-                <span>Scroll to explore</span>
-                <div class="scroll-line"></div>
-            </div>
+            <a class="scroll-cue" href="#about">
+                <span>DISCOVER MORE</span>
+                <span class="scroll-line"></span>
+            </a>
 
         </section>
 
 
+        <!-- ABOUT -->
+        <section class="section about-section" id="about">
 
-        <!-- =========================================
-             ABOUT SECTION
-        ========================================== -->
+            <div class="container about-grid">
 
-        <section class="about section" id="about">
+                <div class="about-visual reveal">
+                    <div class="about-frame">
+                        <div class="about-flower" aria-hidden="true">❀</div>
 
-            <div class="section-container">
+                        <p class="visual-caption">A THOUGHTFUL APPROACH</p>
 
-                <div class="section-label reveal">
-                    <span>01</span>
-                    ABOUT ME
+                        <div class="about-monogram">SW</div>
+
+                        <span class="about-frame-bottom">
+                            SUHYWRITES
+                        </span>
+                    </div>
                 </div>
 
-                <div class="about-grid">
+                <div class="about-content reveal">
 
-                    <div class="about-heading reveal">
+                    <p class="section-eyebrow">A LITTLE ABOUT ME</p>
 
-                        <p class="eyebrow">
-                            Behind the words
-                        </p>
-
-                        <h2>
-                            I write with
-                            <em>purpose,</em>
-                            not just words.
-                        </h2>
-
-                    </div>
-
-                    <div class="about-text reveal">
-
-                        <p>
-                            I'm Suhaira Awan, the writer behind
-                            <strong>SuhyWrites</strong>.
-                        </p>
-
-                        <p>
-                            I believe great content should feel natural,
-                            communicate clearly and give readers a reason
-                            to keep reading.
-                        </p>
-
-                        <p>
-                            From SEO blogs and website content to articles,
-                            product descriptions and social media copy,
-                            I create content designed around both
-                            people and purpose.
-                        </p>
-
-                        <a href="#services" class="text-link">
-                            Discover my services
-                            <span>→</span>
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================================
-             SERVICES SECTION
-        ========================================== -->
-
-        <section class="services section" id="services">
-
-            <div class="section-container">
-
-                <div class="section-header reveal">
-
-                    <div class="section-label">
-                        <span>02</span>
-                        WHAT I DO
-                    </div>
-
-                    <h2>
-                        Content that works
-                        <em>for you.</em>
+                    <h2 class="section-title">
+                        The words<br>
+                        behind the <em>work.</em>
                     </h2>
 
-                    <p>
-                        Whether you need informative content,
-                        persuasive copy or SEO-focused writing,
-                        I've got you covered.
+                    <h3 class="about-name">
+                        Hi, I'm Suhaira Awan
+                    </h3>
+
+                    <p class="about-role">
+                        Also known as Kaneez Mamoona
                     </p>
 
-                </div>
-
-
-                <div class="services-grid">
-
-
-                    <!-- Service 1 -->
-
-                    <article class="service-card reveal">
-
-                        <div class="service-number">
-                            01
-                        </div>
-
-                        <div class="service-icon">
-                            ✦
-                        </div>
-
-                        <h3>
-                            SEO Content
-                        </h3>
-
-                        <p>
-                            Search-friendly content written to
-                            attract readers and improve visibility.
-                        </p>
-
-                        <ul>
-                            <li>SEO Blog Posts</li>
-                            <li>Keyword-focused Articles</li>
-                            <li>On-page Content</li>
-                        </ul>
-
-                    </article>
-
-
-                    <!-- Service 2 -->
-
-                    <article class="service-card reveal">
-
-                        <div class="service-number">
-                            02
-                        </div>
-
-                        <div class="service-icon">
-                            ✎
-                        </div>
-
-                        <h3>
-                            Blog & Articles
-                        </h3>
-
-                        <p>
-                            Well-researched and engaging articles
-                            that inform, educate and keep readers hooked.
-                        </p>
-
-                        <ul>
-                            <li>Long-form Articles</li>
-                            <li>Informative Blogs</li>
-                            <li>Research-based Writing</li>
-                        </ul>
-
-                    </article>
-
-
-                    <!-- Service 3 -->
-
-                    <article class="service-card reveal">
-
-                        <div class="service-number">
-                            03
-                        </div>
-
-                        <div class="service-icon">
-                            ♡
-                        </div>
-
-                        <h3>
-                            Website Content
-                        </h3>
-
-                        <p>
-                            Clear website copy that communicates
-                            your brand and guides visitors toward action.
-                        </p>
-
-                        <ul>
-                            <li>Home Pages</li>
-                            <li>About Pages</li>
-                            <li>Service Pages</li>
-                        </ul>
-
-                    </article>
-
-
-                    <!-- Service 4 -->
-
-                    <article class="service-card reveal">
-
-                        <div class="service-number">
-                            04
-                        </div>
-
-                        <div class="service-icon">
-                            ◇
-                        </div>
-
-                        <h3>
-                            Product Descriptions
-                        </h3>
-
-                        <p>
-                            Persuasive product copy that highlights
-                            value and helps turn visitors into buyers.
-                        </p>
-
-                        <ul>
-                            <li>E-commerce Copy</li>
-                            <li>Product Descriptions</li>
-                            <li>Feature & Benefit Copy</li>
-                        </ul>
-
-                    </article>
-
-
-                    <!-- Service 5 -->
-
-                    <article class="service-card reveal">
-
-                        <div class="service-number">
-                            05
-                        </div>
-
-                        <div class="service-icon">
-                            @
-                        </div>
-
-                        <h3>
-                            Social Media Copy
-                        </h3>
-
-                        <p>
-                            Short, engaging content created to
-                            capture attention and encourage interaction.
-                        </p>
-
-                        <ul>
-                            <li>Captions</li>
-                            <li>Social Posts</li>
-                            <li>Content Ideas</li>
-                        </ul>
-
-                    </article>
-
-
-                    <!-- Service 6 -->
-
-                    <article class="service-card reveal">
-
-                        <div class="service-number">
-                            06
-                        </div>
-
-                        <div class="service-icon">
-                            ✓
-                        </div>
-
-                        <h3>
-                            Editing & Proofreading
-                        </h3>
-
-                        <p>
-                            Clean, polished writing with better
-                            clarity, grammar, structure and flow.
-                        </p>
-
-                        <ul>
-                            <li>Grammar Correction</li>
-                            <li>Content Editing</li>
-                            <li>Final Proofreading</li>
-                        </ul>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================================
-             PORTFOLIO SECTION
-        ========================================== -->
-
-        <section class="portfolio section" id="portfolio">
-
-            <div class="section-container">
-
-                <div class="section-header portfolio-header reveal">
-
-                    <div>
-
-                        <div class="section-label">
-                            <span>03</span>
-                            MY WORK
-                        </div>
-
-                        <h2>
-                            Words I've
-                            <em>crafted.</em>
-                        </h2>
-
-                    </div>
-
-                    <p>
-                        A selection of writing samples showcasing
-                        different styles, formats and topics.
+                    <p class="body-copy">
+                        I believe words can do more than fill a page.
+                        They can communicate ideas, create connections,
+                        and make a message memorable.
                     </p>
 
-                </div>
-
-
-                <!-- FILTER BUTTONS -->
-
-                <div class="portfolio-filters reveal">
-
-                    <button class="filter-button active" data-filter="all">
-                        All
-                    </button>
-
-                    <button class="filter-button" data-filter="seo">
-                        SEO
-                    </button>
-
-                    <button class="filter-button" data-filter="blog">
-                        Blogs
-                    </button>
-
-                    <button class="filter-button" data-filter="article">
-                        Articles
-                    </button>
-
-                    <button class="filter-button" data-filter="creative">
-                        Creative
-                    </button>
-
-                </div>
-
-
-                <!-- PORTFOLIO GRID -->
-
-                <div class="portfolio-grid">
-
-
-                    <article class="portfolio-item seo reveal">
-
-                        <div class="portfolio-image portfolio-image-one">
-                            <span>SEO</span>
-                        </div>
-
-                        <div class="portfolio-info">
-
-                            <span class="portfolio-category">
-                                SEO Content
-                            </span>
-
-                            <h3>
-                                Search-Friendly Content
-                            </h3>
-
-                            <p>
-                                Strategic content written with
-                                readers and search engines in mind.
-                            </p>
-
-                            <a href="#" class="portfolio-link">
-                                View sample →
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <article class="portfolio-item blog reveal">
-
-                        <div class="portfolio-image portfolio-image-two">
-                            <span>BLOG</span>
-                        </div>
-
-                        <div class="portfolio-info">
-
-                            <span class="portfolio-category">
-                                Blog Writing
-                            </span>
-
-                            <h3>
-                                Stories That Keep Readers Reading
-                            </h3>
-
-                            <p>
-                                Engaging blog content with a natural
-                                conversational flow.
-                            </p>
-
-                            <a href="#" class="portfolio-link">
-                                View sample →
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <article class="portfolio-item article reveal">
-
-                        <div class="portfolio-image portfolio-image-three">
-                            <span>ARTICLE</span>
-                        </div>
-
-                        <div class="portfolio-info">
-
-                            <span class="portfolio-category">
-                                Article
-                            </span>
-
-                            <h3>
-                                Informative & Research-Based
-                            </h3>
-
-                            <p>
-                                Structured articles designed to
-                                explain complex ideas clearly.
-                            </p>
-
-                            <a href="#" class="portfolio-link">
-                                View sample →
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <article class="portfolio-item creative reveal">
-
-                        <div class="portfolio-image portfolio-image-four">
-                            <span>CREATIVE</span>
-                        </div>
-
-                        <div class="portfolio-info">
-
-                            <span class="portfolio-category">
-                                Creative Writing
-                            </span>
-
-                            <h3>
-                                Emotion Through Words
-                            </h3>
-
-                            <p>
-                                Creative pieces built around emotion,
-                                atmosphere and storytelling.
-                            </p>
-
-                            <a href="#" class="portfolio-link">
-                                View sample →
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================================
-             WHY ME SECTION
-        ========================================== -->
-
-        <section class="why-me section">
-
-            <div class="section-container">
-
-                <div class="why-grid">
-
-                    <div class="why-heading reveal">
-
-                        <div class="section-label">
-                            <span>04</span>
-                            WHY SUHYWRITES
-                        </div>
-
-                        <h2>
-                            More than
-                            <em>just writing.</em>
-                        </h2>
-
-                        <p>
-                            Every piece of content should have a reason
-                            to exist. I focus on clarity, connection
-                            and results.
-                        </p>
-
-                    </div>
-
-
-                    <div class="why-list">
-
-                        <div class="why-item reveal">
-
-                            <span class="why-icon">01</span>
-
-                            <div>
-                                <h3>Research First</h3>
-
-                                <p>
-                                    I understand the topic and audience
-                                    before putting words on the page.
-                                </p>
-                            </div>
-
-                        </div>
-
-
-                        <div class="why-item reveal">
-
-                            <span class="why-icon">02</span>
-
-                            <div>
-                                <h3>Human Writing</h3>
-
-                                <p>
-                                    Natural language that sounds like
-                                    a person talking to another person.
-                                </p>
-                            </div>
-
-                        </div>
-
-
-                        <div class="why-item reveal">
-
-                            <span class="why-icon">03</span>
-
-                            <div>
-                                <h3>SEO Awareness</h3>
-
-                                <p>
-                                    Content structured with search
-                                    visibility and readability in mind.
-                                </p>
-                            </div>
-
-                        </div>
-
-
-                        <div class="why-item reveal">
-
-                            <span class="why-icon">04</span>
-
-                            <div>
-                                <h3>Attention to Detail</h3>
-
-                                <p>
-                                    From grammar to structure, every
-                                    detail gets a final review.
-                                </p>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================================
-             PROCESS SECTION
-        ========================================== -->
-
-        <section class="process section" id="process">
-
-            <div class="section-container">
-
-                <div class="section-header centered reveal">
-
-                    <div class="section-label">
-                        <span>05</span>
-                        MY PROCESS
-                    </div>
-
-                    <h2>
-                        From idea to
-                        <em>impact.</em>
-                    </h2>
-
-                    <p>
-                        A simple process that keeps every project
-                        organized, purposeful and polished.
+                    <p class="body-copy">
+                        Through SuhyWrites, I share my writing,
+                        creative ideas, and published work in one place.
+                        This portfolio is a reflection of my voice,
+                        interests, and growth as a writer.
                     </p>
 
-                </div>
-
-
-                <div class="process-grid">
-
-                    <div class="process-step reveal">
-
-                        <span>01</span>
-
-                        <div class="process-icon">
-                            ◎
-                        </div>
-
-                        <h3>
-                            Research
-                        </h3>
-
-                        <p>
-                            Understand the topic, audience and goals.
-                        </p>
-
+                    <div class="about-highlights">
+                        <span>Thoughtful storytelling</span>
+                        <span>Reader-focused writing</span>
+                        <span>Creative expression</span>
                     </div>
 
-
-                    <div class="process-connector"></div>
-
-
-                    <div class="process-step reveal">
-
-                        <span>02</span>
-
-                        <div class="process-icon">
-                            ◌
-                        </div>
-
-                        <h3>
-                            Plan
-                        </h3>
-
-                        <p>
-                            Build the structure and content direction.
-                        </p>
-
-                    </div>
-
-
-                    <div class="process-connector"></div>
-
-
-                    <div class="process-step reveal">
-
-                        <span>03</span>
-
-                        <div class="process-icon">
-                            ✎
-                        </div>
-
-                        <h3>
-                            Write
-                        </h3>
-
-                        <p>
-                            Turn ideas into clear, engaging content.
-                        </p>
-
-                    </div>
-
-
-                    <div class="process-connector"></div>
-
-
-                    <div class="process-step reveal">
-
-                        <span>04</span>
-
-                        <div class="process-icon">
-                            ✓
-                        </div>
-
-                        <h3>
-                            Edit
-                        </h3>
-
-                        <p>
-                            Refine grammar, clarity, flow and SEO.
-                        </p>
-
-                    </div>
-
-
-                    <div class="process-connector"></div>
-
-
-                    <div class="process-step reveal">
-
-                        <span>05</span>
-
-                        <div class="process-icon">
-                            ↗
-                        </div>
-
-                        <h3>
-                            Deliver
-                        </h3>
-
-                        <p>
-                            Deliver polished content ready to publish.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================================
-             CTA SECTION
-        ========================================== -->
-
-        <section class="cta section">
-
-            <div class="section-container">
-
-                <div class="cta-box reveal">
-
-                    <div class="cta-butterfly">
-                        🦋
-                    </div>
-
-                    <p class="eyebrow">
-                        HAVE A PROJECT IN MIND?
-                    </p>
-
-                    <h2>
-                        Let's turn your ideas
-                        <br>
-                        into <em>words.</em>
-                    </h2>
-
-                    <p>
-                        Tell me what you're working on,
-                        and let's create content your audience
-                        will actually want to read.
-                    </p>
-
-                    <a href="#contact" class="primary-button">
-                        Start a Conversation
-                        <span>↗</span>
+                    <a href="#portfolio" class="text-link">
+                        Explore my portfolio <span>↗</span>
                     </a>
 
                 </div>
@@ -985,122 +211,273 @@
         </section>
 
 
+        <!-- PORTFOLIO -->
+        <section class="section portfolio-section" id="portfolio">
 
-        <!-- =========================================
-             CONTACT SECTION
-        ========================================== -->
+            <div class="container">
 
-        <section class="contact section" id="contact">
+                <div class="section-heading reveal">
+                    <p class="section-eyebrow">SELECTED WRITING</p>
 
-            <div class="section-container">
+                    <h2 class="section-title">
+                        Words worth<br>
+                        <em>exploring.</em>
+                    </h2>
 
-                <div class="contact-grid">
+                    <p class="section-description">
+                        A collection of my writing and creative work.
+                        Explore my portfolio to discover more.
+                    </p>
+                </div>
 
+                <div class="portfolio-grid">
 
-                    <div class="contact-heading reveal">
-
-                        <div class="section-label">
-                            <span>06</span>
-                            GET IN TOUCH
+                    <article class="portfolio-card reveal">
+                        <div class="portfolio-art art-one">
+                            <span class="art-flower" aria-hidden="true">❀</span>
+                            <span class="art-label">01 / WRITING</span>
                         </div>
 
-                        <h2>
-                            Let's create
-                            <em>something meaningful.</em>
-                        </h2>
+                        <div class="portfolio-card-content">
+                            <p class="card-category">MY PORTFOLIO</p>
+
+                            <h3>Writing & Creative Work</h3>
+
+                            <p>
+                                Discover my writing samples and explore
+                                my work in more detail.
+                            </p>
+
+                            <a href="https://suhywrites.wordpress.com/my-content-writing-portfolio/"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="text-link">
+                                Explore writing <span>↗</span>
+                            </a>
+                        </div>
+                    </article>
+
+
+                    <article class="portfolio-card reveal">
+                        <div class="portfolio-art art-two">
+                            <span class="art-flower" aria-hidden="true">✿</span>
+                            <span class="art-label">02 / JOURNAL</span>
+                        </div>
+
+                        <div class="portfolio-card-content">
+                            <p class="card-category">WORDPRESS</p>
+
+                            <h3>Ideas in Words</h3>
+
+                            <p>
+                                Visit my WordPress portfolio to read
+                                more of my published work.
+                            </p>
+
+                            <a href="https://suhywrites.wordpress.com/my-content-writing-portfolio/"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="text-link">
+                                Visit WordPress <span>↗</span>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="portfolio-bottom reveal">
+                    <p>Want to see more of my work?</p>
+
+                    <a href="https://suhywrites.wordpress.com/my-content-writing-portfolio/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="button button-outline">
+                        Visit Full Portfolio <span>↗</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+<section class="section services-section" id="services"><div class="container"><div class="section-heading"><p class="section-eyebrow">WHAT I CAN HELP WITH</p><h2 class="section-title">Words with a <em>purpose.</em></h2><p class="section-description">Thoughtful writing tailored to your content goals.</p></div><div class="services-grid"><article class="service-card"><span class="service-number">01</span><h3>Blog &amp; Article Writing</h3><p>Informative, engaging articles that give readers useful information.</p></article><article class="service-card"><span class="service-number">02</span><h3>SEO Content Writing</h3><p>Search-intent-focused content designed for readability and discoverability.</p></article><article class="service-card"><span class="service-number">03</span><h3>Creative Writing</h3><p>Original ideas, expressive storytelling and creative written pieces.</p></article><article class="service-card"><span class="service-number">04</span><h3>Editing &amp; Proofreading</h3><p>Polishing grammar, clarity, flow and consistency in written content.</p></article></div><div class="section-action"><a href="#contact" class="button button-primary">Discuss Your Project ↗</a></div></div></section>
+        <!-- WHY ME -->
+        <section class="section why-section" id="why-me">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <p class="section-eyebrow">THE THOUGHT BEHIND THE WORDS</p>
+
+                    <h2 class="section-title">
+                        Writing with<br>
+                        <em>intention.</em>
+                    </h2>
+                </div>
+
+                <div class="qualities-grid">
+
+                    <article class="quality-card reveal">
+                        <span class="quality-number">01</span>
+                        <span class="quality-flower" aria-hidden="true">✿</span>
+
+                        <h3>Clarity</h3>
 
                         <p>
-                            Have a project, collaboration or writing
-                            opportunity? I'd love to hear from you.
+                            Ideas should be easy to understand,
+                            meaningful to read, and thoughtfully presented.
                         </p>
+                    </article>
 
-                        <a href="mailto:kmamoona092@gmail.com"
-                           class="email-link">
+                    <article class="quality-card reveal">
+                        <span class="quality-number">02</span>
+                        <span class="quality-flower" aria-hidden="true">❀</span>
 
-                            kmamoona092@gmail.com
+                        <h3>Creativity</h3>
 
-                            <span>↗</span>
+                        <p>
+                            Every piece deserves its own voice,
+                            personality, and approach.
+                        </p>
+                    </article>
 
-                        </a>
+                    <article class="quality-card reveal">
+                        <span class="quality-number">03</span>
+                        <span class="quality-flower" aria-hidden="true">✿</span>
 
-                    </div>
+                        <h3>Purpose</h3>
+
+                        <p>
+                            Good writing starts with understanding
+                            the message and the people reading it.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
 
 
-                    <div class="contact-links reveal">
+        <!-- PROCESS -->
+        <section class="section process-section" id="process">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <p class="section-eyebrow">A SIMPLE APPROACH</p>
+
+                    <h2 class="section-title">
+                        From first thought<br>
+                        to <em>final words.</em>
+                    </h2>
+                </div>
+
+                <div class="process-list">
+
+                    <article class="process-item reveal">
+                        <span class="process-number">01</span>
+
+                        <div>
+                            <h3>Understand</h3>
+                            <p>
+                                Start with the purpose, audience,
+                                and message behind the project.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="process-item reveal">
+                        <span class="process-number">02</span>
+
+                        <div>
+                            <h3>Research & Create</h3>
+                            <p>
+                                Develop ideas and shape them into
+                                clear, relevant, reader-focused writing.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="process-item reveal">
+                        <span class="process-number">03</span>
+
+                        <div>
+                            <h3>Refine</h3>
+                            <p>
+                                Review the writing for clarity,
+                                consistency, and the intended purpose.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT CTA -->
+        <section class="section contact-section" id="contact">
+
+            <div class="container">
+
+                <div class="contact-panel reveal">
+
+                    <span class="contact-flower flower-a"
+                          aria-hidden="true">❀</span>
+
+                    <span class="contact-flower flower-b"
+                          aria-hidden="true">✿</span>
+
+                    <p class="section-eyebrow">LET'S CONNECT</p>
+
+                    <h2 class="section-title">
+                        Have a story<br>
+                        to <em>tell?</em>
+                    </h2>
+
+                    <p class="contact-description">
+                        Have a project, an idea, or simply want
+                        to connect? I'd love to hear from you.
+                    </p>
+
+                    <a href="mailto:kmamoona092@gmail.com"
+                       class="button button-primary">
+                        Let's Talk <span>↗</span>
+                    </a>
+
+                    <a href="mailto:kmamoona092@gmail.com"
+                       class="contact-email">
+                        kmamoona092@gmail.com
+                    </a>
+
+                    <div class="contact-socials">
 
                         <a href="https://www.linkedin.com/in/suhaira-awan-kaneez-mamoona-2a5a33394/"
                            target="_blank"
-                           rel="noopener noreferrer"
-                           class="contact-card">
-
-                            <span class="contact-card-icon">
-                                in
-                            </span>
-
-                            <div>
-                                <span>LinkedIn</span>
-                                <strong>Connect with me</strong>
-                            </div>
-
-                            <span>↗</span>
-
+                           rel="noopener noreferrer">
+                            LinkedIn
                         </a>
-
-
-                        <a href="https://suhywrites.wordpress.com/my-content-writing-portfolio/"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="contact-card">
-
-                            <span class="contact-card-icon">
-                                W
-                            </span>
-
-                            <div>
-                                <span>WordPress</span>
-                                <strong>View writing portfolio</strong>
-                            </div>
-
-                            <span>↗</span>
-
-                        </a>
-
 
                         <a href="https://www.instagram.com/suhywrites/"
                            target="_blank"
-                           rel="noopener noreferrer"
-                           class="contact-card">
-
-                            <span class="contact-card-icon">
-                                ◎
-                            </span>
-
-                            <div>
-                                <span>Instagram</span>
-                                <strong>@suhywrites</strong>
-                            </div>
-
-                            <span>↗</span>
-
+                           rel="noopener noreferrer">
+                            Instagram
                         </a>
-
 
                         <a href="https://www.facebook.com/profile.php?id=61573744681681"
                            target="_blank"
-                           rel="noopener noreferrer"
-                           class="contact-card">
+                           rel="noopener noreferrer">
+                            Facebook
+                        </a>
 
-                            <span class="contact-card-icon">
-                                f
-                            </span>
-
-                            <div>
-                                <span>Facebook</span>
-                                <strong>Let's connect</strong>
-                            </div>
-
-                            <span>↗</span>
-
+                        <a href="https://suhywrites.wordpress.com/my-content-writing-portfolio/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            WordPress
                         </a>
 
                     </div>
@@ -1114,54 +491,34 @@
     </main>
 
 
+    <!-- FOOTER -->
+    <footer class="site-footer">
 
-    <!-- =========================================
-         FOOTER
-    ========================================== -->
+        <div class="container footer-inner">
 
-    <footer class="footer">
+            <a class="logo" href="#home">
+                suhy<span>writes</span><span class="logo-dot">.</span>
+            </a>
 
-        <div class="footer-container">
+            <p>
+                Thoughtfully written. Authentically yours.
+            </p>
 
-            <div class="footer-brand">
+            <a href="#home" class="back-to-top">
+                Back to top ↑
+            </a>
 
-                <a href="#home" class="logo">
-                    Suhy<span>Writes</span>
-                </a>
-
-                <p>
-                    Words with purpose.
-                </p>
-
-            </div>
-
-
-            <div class="footer-links">
-
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
-
-            </div>
-
-
-            <div class="footer-copy">
-
-                © 2026 SuhyWrites —
-                Suhaira Awan (Kaneez Mamoona)
-
-            </div>
+            <small class="copyright">
+                © <span id="current-year">2026</span> SuhyWrites.
+                All rights reserved.
+            </small>
 
         </div>
 
     </footer>
 
-
-
-    <!-- JavaScript -->
-    <script src="script.js"></script>
-
 </body>
 </html>
+
+  
+                      
